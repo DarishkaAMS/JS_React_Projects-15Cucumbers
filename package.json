@@ -1,0 +1,19 @@
+{
+  "name": "javascript_react_projects-cucumber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarishkaAMS/JavaScript_React_Projects-Cucumber.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarishkaAMS/JavaScript_React_Projects-Cucumber/issues"
+  },
+  "homepage": "https://github.com/DarishkaAMS/JavaScript_React_Projects-Cucumber#readme"
+}
