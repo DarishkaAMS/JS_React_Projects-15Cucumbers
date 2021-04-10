@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DarishkaAMS/JavaScript_React_Projects-Cucumber/issues"
   },
-  "homepage": "https://github.com/DarishkaAMS/JavaScript_React_Projects-Cucumber#readme"
+  "homepage": "https://github.com/DarishkaAMS/JavaScript_React_Projects-Cucumber#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
 }
