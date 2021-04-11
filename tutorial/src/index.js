@@ -9,10 +9,16 @@ import ReactDom from 'react-dom';
 
 function Greeting() {
   return( 
-    <div>
-      <h4>Good Morning ^_^!</h4>
-    </div>
+    <React.Fragment>
+      <div>
+        <Person/>
+        <h4>Good Morning ^_^!</h4>
+      </div>
+    </React.Fragment>
   );
 }
+
+const Person = () => <h2> Daryna </h2>
+
 
 ReactDom.render(<Greeting/>, document.getElementById('root'));
