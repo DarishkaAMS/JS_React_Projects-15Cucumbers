@@ -11,9 +11,10 @@ import './index.css'
 function BookList() {
   return( 
     <React.Fragment>
-      <section>
+      <section className="booklist">
 
         <h4>This is a BookList</h4>
+        <Book/>
         <Book/>
         <Book/>
 
@@ -23,7 +24,7 @@ function BookList() {
 }
 
 const Book = () => {
-  return <article>
+  return <article className="book">
     This is my favourite book
       <Author/> 
       <br/>
