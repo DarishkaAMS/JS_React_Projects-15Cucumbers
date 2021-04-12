@@ -31,21 +31,15 @@ function BookList() {
 }
 
 
-const Book = (props) => {
+const Book = ({image, title, author}) => {
+  // const {image, title, author} = props
   return (
     <article className="book">
-      <img src={props.image} alt="#" width="200" height="250"/>
-      <h3>{props.author}</h3>
-      <h4>{props.title}</h4>
+      <img src={image} alt="#" width="200" height="250"/>
+      <h3>{author}</h3>
+      <h4>{title}</h4>
     </article>
   );
-};
-
-// const Author = () => {
-//   return <h4 style={{color: "#617d98", fontSize: '0.75rem', marginTop: '0.25rem'}}> I have written this book </h4>;
-// };
-
-// const Image = () => ();
-
+}
 
 ReactDom.render(<BookList/>, document.getElementById('root'));
