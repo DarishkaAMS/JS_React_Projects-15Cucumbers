@@ -26,16 +26,16 @@ body {
 }
 
 .book {
-  background: darkgray;
+  background: lightcoral;
   border-radius: 1rem;
   padding: 1rem 2rem;
 }
 
-.book h3 {
+.book h4 {
   margin-top: 0.5rem;
 }
 
-.book h4 {
+.book h3 {
   color: darkslateblue;
   font-size: 0.75rem;
   margin-top: 0.25rem;
