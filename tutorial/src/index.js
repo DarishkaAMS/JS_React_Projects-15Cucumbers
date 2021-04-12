@@ -7,18 +7,25 @@ import ReactDom from 'react-dom';
 // };
 
 
-function Greeting() {
+function BookList() {
   return( 
     <React.Fragment>
-      <div>
-        <Person/>
-        <h4>Good Morning ^_^!</h4>
-      </div>
+      <section>
+
+        <h4>This is a BookList</h4>
+        <Book/>
+
+      </section>
     </React.Fragment>
   );
 }
 
-const Person = () => <h2> Daryna </h2>
+const Book = () => {
+  return <article>
+    This is my favourite book
+  </article>;
+};
+// const Message = {} => 
 
 
-ReactDom.render(<Greeting/>, document.getElementById('root'));
+ReactDom.render(<BookList/>, document.getElementById('root'));
