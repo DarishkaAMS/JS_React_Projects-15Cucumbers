@@ -24,3 +24,13 @@ body {
     /* align-items: start; */
   }
 }
+
+.book {
+  background: darkgray;
+  border-radius: 1rem;
+  padding: 1 rem 2 rem;
+}
+
+.book h1 {
+  margin-top: 0.5 rem;
+}
