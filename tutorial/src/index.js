@@ -5,29 +5,32 @@ import ReactDom from 'react-dom';
 import './index.css'
 
 // Setup vars
-const firstBook = {
-  image: "https://res.cloudinary.com/practicaldev/image/fetch/s--FaVyk1l0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://images-na.ssl-images-amazon.com/images/I/51hFtDvqgfL._SX379_BO1%2C204%2C203%2C200_.jpg",
-  title: "Python Cookbook",
-  author: "DarishkaAMS"
-}
-
-const secondBook = {
-  image: "https://images-na.ssl-images-amazon.com/images/I/71oUHJ6uO7L.jpg",
-  title: "JS: The Definitive Guide",
-  author: "DarishkaAMS"
-}
+const books = [
+  {
+    image: "https://res.cloudinary.com/practicaldev/image/fetch/s--FaVyk1l0--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://images-na.ssl-images-amazon.com/images/I/51hFtDvqgfL._SX379_BO1%2C204%2C203%2C200_.jpg",
+    title: "Python Cookbook",
+    author: "DarishkaAMS",
+  },
+  {
+    image: "https://images-na.ssl-images-amazon.com/images/I/71oUHJ6uO7L.jpg",
+    title: "JS: The Definitive Guide",
+    author: "DarishkaAMS",
+  },
+  {
+    image: "https://hackr.io/blog/uploads/images/lightweight-django.jpg",
+    title: "Lightweight Django",
+    author: "DarishkaAMS",
+  },
+];
 
 function BookList() {
   return( 
     <React.Fragment>
       <section className="booklist">
         
-        <Book image={firstBook.image} title={firstBook.title} author={firstBook.author}>
-          <p>Lorem ipsum </p>
-          <h5>Lalala</h5>
-        </Book>
-
-        <Book image={secondBook.image} title={secondBook.title} author={secondBook.author}/>
+        {books.map((book) => {
+          return <Book book={book}></Book>;
+        })}
 
       </section>
     </React.Fragment>
@@ -35,8 +38,9 @@ function BookList() {
 }
 
 
-const Book = ({image, title, author, children}) => {
-  // const {image, title, author} = props
+const Book = (props) => {
+  const {image, title, author, children} = props.book;
+
   return (
     <article className="book">
       <img src={image} alt="#" width="200" height="250"/>
