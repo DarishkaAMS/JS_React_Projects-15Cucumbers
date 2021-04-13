@@ -50,12 +50,14 @@ const Book = ({image, title, author}) => {
   };
 
   return (
-    <article className="book">
+    <article className="book" onMouseOver={()=>{
+      console.log(author);
+    }}>
       <img src={image} alt="#" width="200" height="250"/>
       <h3>{author}</h3>
       <h4 onClick={() => console.log(title)}>{title}</h4>
       <button type="button" onClick={clickHandler}>Click Me!</button>
-      <button type="button" onClick={() => complexClickHandler(author)}>Author</button>
+      <button type="button" onClick={() => complexClickHandler(title)}>Title</button>
     </article>
   );
 }
