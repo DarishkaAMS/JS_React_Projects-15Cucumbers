@@ -22,7 +22,11 @@ function BookList() {
     <React.Fragment>
       <section className="booklist">
         
-        <Book image={firstBook.image} title={firstBook.title} author={firstBook.author}/>
+        <Book image={firstBook.image} title={firstBook.title} author={firstBook.author}>
+          <p>Lorem ipsum </p>
+          <h5>Lalala</h5>
+        </Book>
+
         <Book image={secondBook.image} title={secondBook.title} author={secondBook.author}/>
 
       </section>
@@ -31,13 +35,14 @@ function BookList() {
 }
 
 
-const Book = ({image, title, author}) => {
+const Book = ({image, title, author, children}) => {
   // const {image, title, author} = props
   return (
     <article className="book">
       <img src={image} alt="#" width="200" height="250"/>
       <h3>{author}</h3>
       <h4>{title}</h4>
+      {children}
     </article>
   );
 }
