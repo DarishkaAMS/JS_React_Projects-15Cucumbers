@@ -5,10 +5,18 @@ import { FaCat } from 'react-icons/fa';
 
 function App() {
   return (
-  <h2>
-    reviews project setup
+  <main>
     <FaCat className="icon"/>
-    </h2>
+    <section className="container">
+      <div className="title">
+        <h2> Our Reviews </h2>
+        <div className="underline">
+          
+        </div>
+      </div>
+      <Review/>
+    </section>
+  </main>
   );
 }
 
